@@ -19,12 +19,15 @@
     },
     "dependencies": {
         "botbuilder": "~4.4.0",
+        "botbuilder-teams": "^0.2.7",
         "dotenv": "^7.0.0",
         "replace": "~1.1.0",
+        "request-promise": "^4.2.4",
         "restify": "~8.2.0"
     },
     "devDependencies": {
         "@types/dotenv": "6.1.0",
+        "@types/request-promise": "^4.1.44",
         "@types/restify": "7.2.9",
         "nodemon": "~1.18.10",
         "tslint": "~5.14.0",
