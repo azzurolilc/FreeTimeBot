@@ -12,6 +12,7 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
     # determine node version
     node --version
     ```
+*Up date APP_ID and PASSWORD*
 
 ## To run the bot
 
