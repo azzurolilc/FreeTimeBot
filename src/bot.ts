@@ -47,8 +47,6 @@ export class MyBot extends ActivityHandler {
                                 context,
                                 event.Event.Name,
                                 event.Event.Description,
-                                event.Event.Location,
-                                event.Event.StartTime,
                                 event.Event.EventID);
                         });
                     }).catch((e) => {
@@ -112,14 +110,11 @@ export class MyBot extends ActivityHandler {
     private async eventCard(context: any,
                             eventName: string,
                             description: string,
-                            location: string,
-                            time: string,
                             id: string) {
         const url: string = 'https://ftubuntu.westus2.azurecontainer.io/eventimages/' + id + '.jpg';
-        const content: string = description + '\nLocation: ' + location + '\nTime: ' + time;
         const card = CardFactory.thumbnailCard(
             eventName,
-            content,
+            description,
             [url],
             ['Tentative', 'Participate'],
         );
